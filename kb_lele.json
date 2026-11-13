@@ -1,0 +1,47 @@
+{
+  "judul": "Diagnosis Masalah Kualitas Air Kolam Lele",
+  "batas": "Aturan ini didasarkan pada panduan budidaya perikanan air tawar untuk kolam terpal/tanah di dataran rendah. Hasil program bersifat sebagai saran awal penanganan, bukan keputusan mutlak laboratorium.",
+  "sumber": {
+    "S1": "Panduan Kualitas Air Kolam Lele, Dinas Perikanan dan Kelautan, https://dinasperikanan.contoh.go.id/panduan-lele, diakses 3 Nov 2026",
+    "S2": "Manajemen Oksigen Terlarut Budidaya Lele, Jurnal Akuakultur Nusantara, https://doi.org/10.contoh/jurnal.lele.2024, diakses 3 Nov 2026",
+    "S3": "Manajemen Pakan dan Dasar Kolam, Buletin Perikanan Air Tawar, https://buletin.contoh.ac.id/pakan-lele, diakses 3 Nov 2026",
+    "S4": "Teknik Pengapuran dan pH Kolam Ikan, Direktorat Jenderal Perikanan Budidaya, https://djpb.contoh.go.id/pengapuran, diakses 3 Nov 2026"
+  },
+  "aturan": [
+    {
+      "id": "R1",
+      "jika": ["air berbau busuk", "pH air rendah"],
+      "mode": "dan",
+      "maka": "kualitas air memburuk",
+      "sumber": "S1"
+    },
+    {
+      "id": "R2",
+      "jika": ["ikan sering menggantung di permukaan", "oksigen terlarut rendah"],
+      "mode": "dan",
+      "maka": "kadar oksigen kritis",
+      "sumber": "S2"
+    },
+    {
+      "id": "R3",
+      "jika": ["kadar oksigen kritis", "kualitas air memburuk"],
+      "mode": "atau",
+      "maka": "perlu pergantian air segera",
+      "sumber": "S3"
+    },
+    {
+      "id": "R4",
+      "jika": ["perlu pergantian air segera", "sisa pakan menumpuk di dasar"],
+      "mode": "dan",
+      "maka": "risiko kematian massal tinggi",
+      "sumber": "S3"
+    },
+    {
+      "id": "R5",
+      "jika": ["pH air rendah", "air berwarna sangat keruh"],
+      "mode": "dan",
+      "maka": "perlu pengapuran kolam",
+      "sumber": "S4"
+    }
+  ]
+}
